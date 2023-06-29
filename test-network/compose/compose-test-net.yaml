@@ -74,12 +74,12 @@ services:
       - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/ca.crt
       # Peer specific variables
       - CORE_PEER_ID=peer0.org1.example.com
-      - CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+      - CORE_PEER_ADDRESS=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:7051
       - CORE_PEER_LISTENADDRESS=0.0.0.0:7051
-      - CORE_PEER_CHAINCODEADDRESS=peer0.org1.example.com:7052
+      - CORE_PEER_CHAINCODEADDRESS=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:7052
       - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7052
-      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org1.example.com:7051
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org1.example.com:7051
+      - CORE_PEER_GOSSIP_BOOTSTRAP=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:7051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:7051
       - CORE_PEER_LOCALMSPID=Org1MSP
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp
       - CORE_OPERATIONS_LISTENADDRESS=peer0.org1.example.com:9444
@@ -113,12 +113,12 @@ services:
       - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/ca.crt
       # Peer specific variables
       - CORE_PEER_ID=peer0.org2.example.com
-      - CORE_PEER_ADDRESS=peer0.org2.example.com:9051
+      - CORE_PEER_ADDRESS=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:9051
       - CORE_PEER_LISTENADDRESS=0.0.0.0:9051
-      - CORE_PEER_CHAINCODEADDRESS=peer0.org2.example.com:9052
+      - CORE_PEER_CHAINCODEADDRESS=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:9052
       - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:9052
-      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.org2.example.com:9051
-      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.org2.example.com:9051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:9051
+      - CORE_PEER_GOSSIP_BOOTSTRAP=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:9051
       - CORE_PEER_LOCALMSPID=Org2MSP
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/fabric/msp      
       - CORE_OPERATIONS_LISTENADDRESS=peer0.org2.example.com:9445

@@ -42,7 +42,7 @@ Organizations:
                 Rule: "OR('OrdererMSP.admin')"
 
         OrdererEndpoints:
-            - orderer.example.com:7050
+          - ec2-3-135-215-240.us-east-2.compute.amazonaws.com:7050
 
     - &Org1
         # DefaultOrg defines the organization which is used in the sampleconfig
@@ -207,11 +207,11 @@ Orderer: &OrdererDefaults
     # as TLS validation.  The preferred way to specify orderer addresses is now
     # to include the OrdererEndpoints item in your org definition
     Addresses:
-        - orderer.example.com:7050
+        - ec2-3-135-215-240.us-east-2.compute.amazonaws.com:7050
 
     EtcdRaft:
         Consenters:
-        - Host: orderer.example.com
+        - Host: ec2-3-135-215-240.us-east-2.compute.amazonaws.com
           Port: 7050
           ClientTLSCert: ../organizations/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt
           ServerTLSCert: ../organizations/ordererOrganizations/example.com/orderers/orderer.example.com/tls/server.crt

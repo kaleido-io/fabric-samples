@@ -63,11 +63,11 @@ setGlobalsCLI() {
     USING_ORG="${OVERRIDE_ORG}"
   fi
   if [ $USING_ORG -eq 1 ]; then
-    export CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+    export CORE_PEER_ADDRESS=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:7051
   elif [ $USING_ORG -eq 2 ]; then
-    export CORE_PEER_ADDRESS=peer0.org2.example.com:9051
+    export CORE_PEER_ADDRESS=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:9051
   elif [ $USING_ORG -eq 3 ]; then
-    export CORE_PEER_ADDRESS=peer0.org3.example.com:11051
+    export CORE_PEER_ADDRESS=ec2-3-135-215-240.us-east-2.compute.amazonaws.com:11051
   else
     errorln "ORG Unknown"
   fi

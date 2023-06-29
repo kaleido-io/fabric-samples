@@ -11,12 +11,12 @@ OrdererOrgs:
   # Orderer
   # ---------------------------------------------------------------------------
   - Name: Orderer
-    Domain: example.com
+    Domain: us-east-2.compute.amazonaws.com
     EnableNodeOUs: true
     # ---------------------------------------------------------------------------
     # "Specs" - See PeerOrgs for complete description
     # ---------------------------------------------------------------------------
     Specs:
-      - Hostname: orderer
+      - Hostname: ec2-18-224-58-37
         SANS:
           - localhost

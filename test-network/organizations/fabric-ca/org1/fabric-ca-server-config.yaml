@@ -310,7 +310,7 @@ csr:
         OU:
    hosts:
      - localhost
-     - org1.example.com
+     - ec2-3-135-215-240.us-east-2.compute.amazonaws.com
    ca:
       expiry: 131400h
       pathlength: 1
